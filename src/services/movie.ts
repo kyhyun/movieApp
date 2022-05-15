@@ -1,7 +1,7 @@
 import { axios } from 'hooks/worker';
 import { IMovieAPIRes } from 'types/movie.d';
 
-const API_URL = 'http://omdbapi.com/';
+const API_URL = 'https://omdbapi.com/';
 
 interface Params {
   s: string;

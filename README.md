@@ -1,32 +1,44 @@
 ## Movie App
 > 영화를 검색하고 즐겨찾기로 등록할 수 있는 React 앱 서비스
 
+데모 페이지 : https://kyhyun.github.io/movieApp/
+
+### 기술 스택
+- React
+- TypeScript
+- Recoil
+- SCSS
+
+### 주요 기능
+- Movie API를 이용한 영화 검색 기능 구현
 
 ### 디렉터리 구조
-상황에 따라 변경될 수 있음
 ```
-src
 ├─assets
 │  └─svgs
 ├─components
-│  └─common
+│  ├─common
+│  │  └─noPoster
+│  └─_template
+│      ├─footer
+│      └─header
 ├─hooks
 │  ├─state
 │  └─worker
-├─pages
+├─pages      
+│  ├─favorite
+│  ├─notFound
+│  └─search  
+│      └─movieList
+├─services
+├─states
 ├─styles
 │  ├─base
 │  ├─constants
 │  └─mixins
+├─types
 └─utils
 ```
 
-### 와이어 프레임
-<p align="center"></p><img src="https://user-images.githubusercontent.com/77887712/167818639-00f9a3a5-2d49-441b-8a6b-f5c1e7110aac.png" alt="wire-frame" width="500"></p>
-
-### 주요 기능
-
-
-### 기술 스택
-
-### 문제 해결 과정
+### 결과
+<img src="https://user-images.githubusercontent.com/77887712/168461643-a76b0258-4888-4911-a727-2736d48ffb86.gif" width="300px" height="500px">

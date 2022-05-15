@@ -1,15 +1,22 @@
-import styles from './routes.module.scss';
 import { Routes, Route } from 'react-router-dom';
-import LadingPage from './LandingPage/LadingPage';
+import Search from './search/Search';
+import Favorite from './favorite/Favorite';
+import Header from '../components/_template/header/Header';
+import GNB from '../components/_template/footer/GNB';
+import styles from './route.module.scss';
 
 const App = () => {
   return (
-    <div className={styles.appWrapper}>
-      <div className={styles.app}>
+    <div className={styles.app}>
+      <div className={styles.movieContainer}>
+        <Header />
         <Routes>
-          <Route path='/' element={<LadingPage />} />
+          <Route path='/' element={<Search />} />
+          <Route path='/search' element={<Search />} />
+          <Route path='/favorite' element={<Favorite />} />
           <Route path='*' element={<div>404</div>} />
         </Routes>
+        <GNB />
       </div>
     </div>
   );

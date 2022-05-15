@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "react-app", "prettier", "plugin:react/recommended"],
+  "extends": ["airbnb", "airbnb/hooks", "react-app", "prettier", "plugin:react/recommended","plugin:prettier/recommended"],
   "env": {
     "browser": true,
     "jasmine": true,
@@ -22,6 +22,7 @@
     "semi": ["warn", "always"],
     "react/function-component-definition": ["warn", { "namedComponents": "arrow-function" }],
     "react/jsx-one-expression-per-line": "off",
+    "no-console": "off",
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
@@ -43,11 +44,11 @@
         "devDependencies": [".storybook/**", "src/stories/**"]
       }
     ],
-    // "max-lines": ["warn", 150],
+    "max-lines": ["warn", 150],
     "no-param-reassign": ["error", { "props": false }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "no-shadow": "off",
     "no-unused-expressions": ["warn"],
     "@typescript-eslint/no-shadow": ["error"],

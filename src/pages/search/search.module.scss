@@ -1,0 +1,48 @@
+@use '/src/styles/constants/colors';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 638px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  background: linear-gradient(#1e1e1e, #2c2b2b);
+
+  .title {
+    width: 90%;
+    font-size: 1.2rem;
+    color: colors.$GRAYD;
+    text-align: left;
+    text-shadow: #424d59;
+    letter-spacing: 0.2rem;
+  }
+
+  form {
+    position: relative;
+    width: 90%;
+
+    input[type='text'] {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 8px auto;
+      background: #dddddd;
+      border-radius: 1rem;
+    }
+
+    .faviconSearch {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      color: colors.$NAVY;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 16px;
+    overflow: scroll;
+  }
+}

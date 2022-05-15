@@ -6,7 +6,6 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FormEvent, ChangeEvent, useEffect, useState } from 'react';
 import { getMovieApi } from 'services/movie';
 
-import { IMovieAPIRes } from 'types/movie';
 import { movieState } from 'states/movie';
 import { useRecoilState } from 'recoil';
 
@@ -16,7 +15,6 @@ const Search = () => {
   const [inputData, setInputData] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [movies, setMovies] = useRecoilState(movieState);
-  const [isClicked, setIsClicked] = useState<boolean>(false);
 
   useEffect(() => {
     if (inputData.length) return;
@@ -53,7 +51,7 @@ const Search = () => {
         </button>
       </form>
       <div className={cx(styles.content)}>
-        <MovieList item={movies} setIsClicked={setIsClicked} />
+        <MovieList item={movies} />
       </div>
     </main>
   );

@@ -4,6 +4,7 @@ import Favorite from './favorite/Favorite';
 import Header from '../components/_template/header/Header';
 import GNB from '../components/_template/footer/GNB';
 import styles from './route.module.scss';
+import NotFound from './notFound/NotFound';
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
           <Route path='/' element={<Search />} />
           <Route path='/search' element={<Search />} />
           <Route path='/favorite' element={<Favorite />} />
-          <Route path='*' element={<div>404</div>} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <GNB />
       </div>

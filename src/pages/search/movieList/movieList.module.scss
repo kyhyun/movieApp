@@ -41,6 +41,16 @@
           color: colors.$GRAY9;
         }
       }
+
+      .bookmark {
+        padding: 4px;
+        color: colors.$WHITE;
+        cursor: pointer;
+
+        &.favorite {
+          color: colors.$ORANGE;
+        }
+      }
     }
   }
 }
